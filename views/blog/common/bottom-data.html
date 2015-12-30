@@ -1,0 +1,8 @@
+﻿	<script src="/js/libs/require.js" data-main="/js/app/compass"></script>
+	<script type="text/javascript">
+		var requireJS = [];
+		<% requireJS.forEach(function(item) { %>
+		requireJS.push('<%= item %>');
+		<% }) %>
+		require(requireJS);
+	</script>
